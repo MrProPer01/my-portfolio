@@ -55,7 +55,7 @@ section{position:relative;z-index:1}
 @keyframes lineSlide{0%,100%{opacity:.3;transform:translateY(-50%) scaleY(1)}50%{opacity:1;transform:translateY(-50%) scaleY(1.5)}}
 #typed-text::after{content:'█';animation:blink .6s step-end infinite;color:var(--neon);margin-left:2px}
 
-/* STATS */
+
 #stats{background:var(--dark2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
 .stats-inner{max-width:1200px;margin:0 auto;padding:3rem 4vw;display:grid;grid-template-columns:repeat(4,1fr);gap:2rem}
 @media(max-width:700px){.stats-inner{grid-template-columns:repeat(2,1fr)}}
@@ -71,7 +71,7 @@ section{position:relative;z-index:1}
 .section-title{font-family:'Orbitron',monospace;font-size:clamp(1.4rem,3vw,2rem);font-weight:900;color:#fff;letter-spacing:4px;text-transform:uppercase}
 .section-line{flex:1;height:1px;background:linear-gradient(90deg,var(--neon),transparent);opacity:.3}
 
-/* SKILLS */
+
 #skills{background:var(--dark3)}
 .skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.5rem}
 .skill-card{border:1px solid var(--border);padding:2rem;position:relative;overflow:hidden;transition:all .4s;background:rgba(180,79,255,0.03)}
@@ -86,7 +86,6 @@ section{position:relative;z-index:1}
 .skill-list li::before{content:'▸';position:absolute;left:0;color:var(--neon2);opacity:.7}
 .skill-card:hover .skill-list li{color:#c9a8ff}
 
-/* PROJECTS */
 #projects{background:var(--dark2)}
 .projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:1.5rem}
 .project-card{border:1px solid var(--border);background:rgba(6,0,15,0.6);position:relative;overflow:hidden;transition:all .4s;display:flex;flex-direction:column}
@@ -110,7 +109,6 @@ section{position:relative;z-index:1}
 .dot-wip{color:#ffb344;text-shadow:0 0 8px #ffb344}
 .dot-priv{color:var(--muted)}
 
-/* TIMELINE */
 #timeline{background:var(--dark3)}
 .tl-wrap{position:relative;padding-left:3rem}
 .tl-wrap::before{content:'';position:absolute;left:.75rem;top:0;bottom:0;width:1px;background:linear-gradient(var(--neon),var(--neon2),transparent);opacity:.3}
@@ -123,7 +121,7 @@ section{position:relative;z-index:1}
 .tl-title{font-family:'Orbitron',monospace;font-size:1rem;font-weight:700;color:#fff;margin-bottom:.6rem;letter-spacing:2px}
 .tl-desc{font-family:'Share Tech Mono',monospace;font-size:.78rem;line-height:1.8;color:var(--muted);max-width:600px}
 
-/* TOOLS */
+
 #tools{background:var(--dark2)}
 .tags-section{margin-bottom:2.5rem}
 .tags-label{font-family:'Share Tech Mono',monospace;font-size:.7rem;letter-spacing:4px;color:var(--cyan);text-transform:uppercase;margin-bottom:1.2rem}
@@ -134,7 +132,7 @@ section{position:relative;z-index:1}
 .tag-tool{color:var(--cyan);border-color:rgba(0,245,255,0.3)}
 .tag-tool:hover{background:rgba(0,245,255,0.1);box-shadow:0 0 20px rgba(0,245,255,0.2)}
 
-/* TERMINAL */
+
 #terminal-section{background:var(--dark3)}
 .terminal-box{border:1px solid var(--border);background:#04000c;max-width:800px;margin:0 auto;overflow:hidden}
 .terminal-bar{background:rgba(180,79,255,0.1);border-bottom:1px solid var(--border);padding:.6rem 1rem;display:flex;align-items:center;gap:.5rem}
@@ -153,7 +151,7 @@ section{position:relative;z-index:1}
 .t-input-row{display:flex;align-items:center;gap:.5rem;margin-top:.5rem;flex-shrink:0}
 .t-input{background:transparent;border:none;outline:none;color:#fff;font-family:'Share Tech Mono',monospace;font-size:.82rem;flex:1;caret-color:var(--neon)}
 
-/* CONTACT */
+
 #contact{background:var(--dark2)}
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
 @media(max-width:768px){.contact-grid{grid-template-columns:1fr;gap:2rem}}
@@ -171,7 +169,6 @@ footer{border-top:1px solid var(--border);padding:2rem 4vw;display:flex;align-it
 .footer-status{display:flex;align-items:center;gap:.6rem;color:var(--cyan)}
 .status-dot{width:6px;height:6px;border-radius:50%;background:var(--cyan);box-shadow:0 0 10px var(--cyan);animation:blink 2s ease-in-out infinite}
 
-/* EASTER EGG */
 #egg{display:none;position:fixed;inset:0;z-index:9500;background:rgba(0,0,0,.96);align-items:center;justify-content:center;flex-direction:column;text-align:center}
 #egg.show{display:flex}
 .egg-text{font-family:'Orbitron',monospace;font-size:clamp(1.5rem,4vw,3rem);font-weight:900;color:var(--neon);text-shadow:0 0 40px var(--neon),0 0 80px var(--neon2);animation:glitch1 .5s infinite;letter-spacing:6px;margin-bottom:1.5rem}
@@ -198,7 +195,7 @@ footer{border-top:1px solid var(--border);padding:2rem 4vw;display:flex;align-it
 <div class="bg-grid"></div>
 <canvas id="rain-canvas"></canvas>
 
-<!-- EASTER EGG -->
+
 <div id="egg">
   <canvas class="egg-matrix" id="egg-canvas"></canvas>
   <div class="egg-text">ACCESS GRANTED</div>
@@ -207,7 +204,7 @@ footer{border-top:1px solid var(--border);padding:2rem 4vw;display:flex;align-it
   <div class="egg-close" onclick="document.getElementById('egg').classList.remove('show')">[ ESC TO EXIT ]</div>
 </div>
 
-<!-- NAV -->
+
 <nav>
   <a href="#hero" class="nav-logo">MrProPer00</a>
   <div class="nav-links">
@@ -219,7 +216,6 @@ footer{border-top:1px solid var(--border);padding:2rem 4vw;display:flex;align-it
   </div>
 </nav>
 
-<!-- HERO -->
 <section id="hero">
   <div class="hero-orb orb1"></div>
   <div class="hero-orb orb2"></div>
@@ -234,7 +230,7 @@ footer{border-top:1px solid var(--border);padding:2rem 4vw;display:flex;align-it
   </div>
 </section>
 
-<!-- STATS -->
+
 <section id="stats">
   <div class="stats-inner">
     <div class="stat-item reveal">
@@ -258,7 +254,6 @@ footer{border-top:1px solid var(--border);padding:2rem 4vw;display:flex;align-it
 
 <div class="section-divider"></div>
 
-<!-- SKILLS -->
 <section id="skills">
   <div class="section-wrap">
     <div class="section-header reveal">
@@ -341,7 +336,6 @@ footer{border-top:1px solid var(--border);padding:2rem 4vw;display:flex;align-it
 
 <div class="section-divider"></div>
 
-<!-- PROJECTS -->
 <section id="projects">
   <div class="section-wrap">
     <div class="section-header reveal">
@@ -457,7 +451,6 @@ footer{border-top:1px solid var(--border);padding:2rem 4vw;display:flex;align-it
 
 <div class="section-divider"></div>
 
-<!-- TIMELINE -->
 <section id="timeline">
   <div class="section-wrap">
     <div class="section-header reveal">
@@ -502,7 +495,6 @@ footer{border-top:1px solid var(--border);padding:2rem 4vw;display:flex;align-it
 
 <div class="section-divider"></div>
 
-<!-- TOOLS -->
 <section id="tools">
   <div class="section-wrap">
     <div class="section-header reveal">
@@ -533,7 +525,6 @@ footer{border-top:1px solid var(--border);padding:2rem 4vw;display:flex;align-it
 
 <div class="section-divider"></div>
 
-<!-- TERMINAL -->
 <section id="terminal-section">
   <div class="section-wrap">
     <div class="section-header reveal">
@@ -560,7 +551,7 @@ footer{border-top:1px solid var(--border);padding:2rem 4vw;display:flex;align-it
 
 <div class="section-divider"></div>
 
-<!-- CONTACT -->
+
 <section id="contact">
   <div class="section-wrap">
     <div class="section-header reveal">
@@ -595,7 +586,7 @@ footer{border-top:1px solid var(--border);padding:2rem 4vw;display:flex;align-it
 </footer>
 
 <script>
-// CURSOR
+
 const cur=document.getElementById('cursor'),trail=document.getElementById('cursor-trail');
 let mx=0,my=0,tx=0,ty=0;
 document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cur.style.left=mx-6+'px';cur.style.top=my-6+'px'});
@@ -605,7 +596,6 @@ document.querySelectorAll('a,.btn,.skill-card,.tag,.contact-link,.project-card')
   el.addEventListener('mouseleave',()=>{cur.style.transform='';trail.style.transform='';trail.style.borderColor='rgba(180,79,255,0.5)'});
 });
 
-// BINARY RAIN
 (function(){
   const c=document.getElementById('rain-canvas'),ctx=c.getContext('2d');
   let W,H,cols,drops;
@@ -624,7 +614,7 @@ document.querySelectorAll('a,.btn,.skill-card,.tag,.contact-link,.project-card')
   },55);
 })();
 
-// TYPING
+
 const phrases=['MEMORY HACKER','REVERSE ENGINEER','PROCESS MANIPULATOR','WINDOWS INTERNALS DEV','KERNEL EXPLORER'];
 let pi=0,ci=0,del=false;
 const tel=document.getElementById('typed-text');
@@ -636,13 +626,13 @@ function type(){
 }
 setTimeout(type,1600);
 
-// REVEAL
+
 const obs=new IntersectionObserver(entries=>{
   entries.forEach((e,i)=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add('visible'),i*80);obs.unobserve(e.target)}});
 },{threshold:0.1});
 document.querySelectorAll('.reveal,.tl-item').forEach(el=>obs.observe(el));
 
-// STATS COUNTER
+
 function countUp(el,target,suffix,dur=1800){
   let s=null;
   function step(ts){
@@ -663,13 +653,13 @@ const sobs=new IntersectionObserver(entries=>{
 },{threshold:0.5});
 const se=document.getElementById('stats');if(se)sobs.observe(se);
 
-// PARALLAX
+
 document.addEventListener('mousemove',e=>{
   const x=(e.clientX/window.innerWidth-.5)*20,y=(e.clientY/window.innerHeight-.5)*20;
   document.querySelector('.bg-grid').style.transform=`translate(${x}px,${y}px)`;
 });
 
-// RANDOM GLITCH
+
 function rg(){
   const h=document.querySelector('.hero-glitch');
   if(h){h.style.filter='hue-rotate(90deg) brightness(1.8)';setTimeout(()=>h.style.filter='none',80)}
@@ -677,7 +667,7 @@ function rg(){
 }
 rg();
 
-// TERMINAL
+
 const out=document.getElementById('term-output');
 const inp=document.getElementById('term-input');
 const tb=document.getElementById('term-body');
@@ -703,7 +693,7 @@ inp.addEventListener('keydown',e=>{
 });
 setTimeout(()=>{addLine('<span class="t-out2">SYS BOOT OK — RE.EXE shell initialized</span>');addLine('<span style="color:var(--muted)">type <span style="color:var(--neon)">help</span> for commands</span>');addLine('')},400);
 
-// KONAMI EGG
+
 const konami=[38,38,40,40,37,39,37,39,66,65];let ki=0;
 document.addEventListener('keydown',e=>{
   if(e.keyCode===konami[ki]){ki++;if(ki===konami.length){ki=0;triggerEgg()}}else ki=0;
