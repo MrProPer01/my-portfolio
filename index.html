@@ -536,7 +536,7 @@ footer{border-top:1px solid var(--border);padding:2rem 4vw;display:flex;align-it
     <div class="terminal-box reveal">
       <div class="terminal-bar">
         <div class="t-dot r"></div><div class="t-dot y"></div><div class="t-dot g"></div>
-        <span class="t-title">RE.EXE — INTERACTIVE SHELL v1.0</span>
+        <span class="t-title">RE.EXE — INTERACTIVE SHELL</span>
       </div>
       <div class="terminal-body" id="term-body">
         <div id="term-output"></div>
@@ -701,7 +701,6 @@ document.addEventListener('keydown',e=>{
 });
 function triggerEgg(){
   document.getElementById('egg').classList.add('show');
-  // mini matrix on egg canvas
   const ec=document.getElementById('egg-canvas');
   ec.width=window.innerWidth;ec.height=window.innerHeight;
   const ectx=ec.getContext('2d');
